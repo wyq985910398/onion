@@ -268,6 +268,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 			Map<Method, T> methods = MethodIntrospector.selectMethods(userType,
 					(MethodIntrospector.MetadataLookup<T>) method -> {
 						try {
+							//查找这个方法的对应的method 方法
 							return getMappingForMethod(method, userType);
 						}
 						catch (Throwable ex) {

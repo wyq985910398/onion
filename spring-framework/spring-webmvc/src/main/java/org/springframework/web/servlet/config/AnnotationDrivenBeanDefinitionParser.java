@@ -348,6 +348,7 @@ class AnnotationDrivenBeanDefinitionParser implements BeanDefinitionParser {
 			conversionServiceRef = new RuntimeBeanReference(element.getAttribute("conversion-service"));
 		}
 		else {
+			// 创建bean的定义 然后将bean的定义放到beanDefinitionMap中去 key是bean名字
 			RootBeanDefinition conversionDef = new RootBeanDefinition(FormattingConversionServiceFactoryBean.class);
 			conversionDef.setSource(source);
 			conversionDef.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);

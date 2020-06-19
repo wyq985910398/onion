@@ -7,13 +7,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HelloController {
+public class HelloController implements HelloInterface {
 
 	@Autowired
 	TestAop testAop;
 
-	@RequestMapping("sayHello")
-	@ResponseBody
+	@Override
 	public ModelAndView sayHello(int age, String name) {
 		ModelAndView mav = new ModelAndView();
 		MyBean bean = new MyBean(age, name);

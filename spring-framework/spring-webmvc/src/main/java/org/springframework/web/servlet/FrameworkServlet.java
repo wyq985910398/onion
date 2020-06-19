@@ -140,7 +140,8 @@ import org.springframework.web.util.WebUtils;
  * @see #setNamespace
  */
 @SuppressWarnings("serial")
-public abstract class FrameworkServlet extends HttpServletBean implements ApplicationContextAware {
+public abstract class
+FrameworkServlet extends HttpServletBean implements ApplicationContextAware {
 
 	/**
 	 * Suffix for WebApplicationContext namespaces. If a servlet of this class is
