@@ -64,6 +64,7 @@ public final class MethodIntrospector {
 			specificHandlerType = ClassUtils.getUserClass(targetType);
 			handlerTypes.add(specificHandlerType);
 		}
+		//这个getAllInterfacesForClassAsSet方法会找到我们类接口类
 		handlerTypes.addAll(ClassUtils.getAllInterfacesForClassAsSet(targetType));
 
 		for (Class<?> currentHandlerType : handlerTypes) {
@@ -71,6 +72,7 @@ public final class MethodIntrospector {
 
 			ReflectionUtils.doWithMethods(currentHandlerType, method -> {
 				Method specificMethod = ClassUtils.getMostSpecificMethod(method, targetClass);
+				//这个metadataLookup函数式接口方法有回调的成分 这样可以回调S
 				T result = metadataLookup.inspect(specificMethod);
 				if (result != null) {
 					Method bridgedMethod = BridgeMethodResolver.findBridgedMethod(specificMethod);

@@ -95,6 +95,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 	@Nullable
 	private HandlerMethodMappingNamingStrategy<T> namingStrategy;
 
+	//这里包含了url和处理控制器的method对应关系
 	private final MappingRegistry mappingRegistry = new MappingRegistry();
 
 
@@ -268,7 +269,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 			Map<Method, T> methods = MethodIntrospector.selectMethods(userType,
 					(MethodIntrospector.MetadataLookup<T>) method -> {
 						try {
-							//查找这个方法的对应的method 方法
+							//查找这个方法的对应的method 方法 这是个回调接口 请注意一下
 							return getMappingForMethod(method, userType);
 						}
 						catch (Throwable ex) {

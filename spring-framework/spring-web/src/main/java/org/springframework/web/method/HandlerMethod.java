@@ -418,6 +418,7 @@ public class HandlerMethod {
 	 * processing time may be a JDK dynamic proxy (lazy initialization, prototype
 	 * beans, and others). {@code @Controller}'s that require proxying should prefer
 	 * class-based proxy mechanisms.
+	 * 这里要求是继承类的代理 才能实现注解继承 如果是继承接口
 	 */
 	protected void assertTargetBean(Method method, Object targetBean, Object[] args) {
 		Class<?> methodDeclaringClass = method.getDeclaringClass();

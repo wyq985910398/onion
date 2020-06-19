@@ -22,6 +22,9 @@
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 
+	<!-- proxy-target-class:
+	 为true则是基于cglib库代理将起作用（需要）
+	 为false或者省略这个属性，则标准的JDK代理起作用。 -->
 	<aop:aspectj-autoproxy  expose-proxy="true"/>
 
 </beans>

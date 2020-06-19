@@ -707,7 +707,7 @@ public abstract class AnnotatedElementUtils {
 			return null;
 		}
 
-		// Exhaustive retrieval of merged annotation attributes...
+		// Exhaustive retrieval of merged annotation attributes... 翻译:详尽 检索 合并的注解属性
 		AnnotationAttributes attributes = findMergedAnnotationAttributes(element, annotationType, false, false);
 		return (attributes != null ? AnnotationUtils.synthesizeAnnotation(attributes, annotationType, element) : null);
 	}
@@ -1178,6 +1178,7 @@ public abstract class AnnotatedElementUtils {
 					}
 
 					// Search on methods in interfaces declared locally
+					// 这里获取方法继承的所有接口注释
 					Class<?>[] ifcs = method.getDeclaringClass().getInterfaces();
 					if (ifcs.length > 0) {
 						result = searchOnInterfaces(method, annotationTypes, annotationName,
