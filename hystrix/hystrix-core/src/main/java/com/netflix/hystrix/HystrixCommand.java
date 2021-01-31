@@ -376,16 +376,7 @@ public abstract class HystrixCommand<R> extends AbstractCommand<R> implements Hy
          * thus, to comply with the contract of Future, we must wrap around it.
          */
         final Future<R> delegate = toObservable().toBlocking().toFuture();
-
-        /*
-         这里是一个匿名类，我们看到Future是一个接口new Interface()
-         {
-               @Override
-               public void method()
-               {
-               }
-         }
-         */
+    	
         final Future<R> f = new Future<R>() {
 
             @Override

@@ -48,8 +48,7 @@ public interface HystrixCircuitBreaker {
     boolean isOpen();
 
     /**
-     * Invoked on successful executions from {@link HystrixCommand}
-     * as part of feedback mechanism when in a half-open state.
+     * Invoked on successful executions from {@link HystrixCommand} as part of feedback mechanism when in a half-open state.
      */
     void markSuccess();
 
