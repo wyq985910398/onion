@@ -1,0 +1,10 @@
+2021/11/15 21:58:10 [error] 15768#1816: *1 CreateFile() "./html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2021/11/15 22:09:15 [error] 15768#1816: *3 CreateFile() "./html/lua" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /lua HTTP/1.1", host: "127.0.0.1"
+2021/11/15 22:14:13 [notice] 15748#18944: signal process started
+2021/11/15 22:14:16 [notice] 20144#18440: signal process started
+2021/11/15 22:14:16 [error] 20144#18440: CreateFile() "./logs/nginx.pid" failed (2: The system cannot find the file specified)
+2021/11/15 22:17:34 [error] 13580#20620: *1 failed to load external Lua file "D:\openresty\lua	est.lua": cannot open D:\openresty\lua	est.lua: Invalid argument, client: 127.0.0.1, server: localhost, request: "GET /lua HTTP/1.1", host: "127.0.0.1"
+2021/11/15 22:19:23 [error] 21436#19720: *1 failed to load external Lua file "D:\openresty\lua	est.lua": cannot open D:\openresty\lua	est.lua: Invalid argument, client: 127.0.0.1, server: localhost, request: "GET /lua HTTP/1.1", host: "127.0.0.1"
+2021/11/15 22:20:58 [notice] 4444#12188: signal process started
+2021/11/15 22:21:17 [error] 15472#19520: *3 CreateFile() "./html/index" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /index HTTP/1.1", host: "127.0.0.1"
+2021/11/15 22:21:58 [error] 15472#19520: *3 CreateFile() "./html/xxx/index.html" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /xxx/index.html HTTP/1.1", host: "127.0.0.1"
