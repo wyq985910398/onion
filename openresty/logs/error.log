@@ -1,10 +1,68 @@
-2021/11/15 21:58:10 [error] 15768#1816: *1 CreateFile() "./html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
-2021/11/15 22:09:15 [error] 15768#1816: *3 CreateFile() "./html/lua" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /lua HTTP/1.1", host: "127.0.0.1"
-2021/11/15 22:14:13 [notice] 15748#18944: signal process started
-2021/11/15 22:14:16 [notice] 20144#18440: signal process started
-2021/11/15 22:14:16 [error] 20144#18440: CreateFile() "./logs/nginx.pid" failed (2: The system cannot find the file specified)
-2021/11/15 22:17:34 [error] 13580#20620: *1 failed to load external Lua file "D:\openresty\lua	est.lua": cannot open D:\openresty\lua	est.lua: Invalid argument, client: 127.0.0.1, server: localhost, request: "GET /lua HTTP/1.1", host: "127.0.0.1"
-2021/11/15 22:19:23 [error] 21436#19720: *1 failed to load external Lua file "D:\openresty\lua	est.lua": cannot open D:\openresty\lua	est.lua: Invalid argument, client: 127.0.0.1, server: localhost, request: "GET /lua HTTP/1.1", host: "127.0.0.1"
-2021/11/15 22:20:58 [notice] 4444#12188: signal process started
-2021/11/15 22:21:17 [error] 15472#19520: *3 CreateFile() "./html/index" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /index HTTP/1.1", host: "127.0.0.1"
-2021/11/15 22:21:58 [error] 15472#19520: *3 CreateFile() "./html/xxx/index.html" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /xxx/index.html HTTP/1.1", host: "127.0.0.1"
+2021/11/18 21:01:31 [info] 6936#5752: *2 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2021/11/18 21:05:47 [notice] 3164#17620: signal process started
+2021/11/18 21:06:05 [notice] 24684#22828: signal process started
+2021/11/18 21:06:17 [error] 10236#16916: *5 CreateFile() "./html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:8080", referrer: "http://127.0.0.1:8080/download"
+2021/11/18 21:06:17 [warn] 10236#16916: *5 using uninitialized "target_select" variable while logging request, client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:8080", referrer: "http://127.0.0.1:8080/download"
+2021/11/18 21:07:17 [info] 10236#16916: *6 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2021/11/18 21:07:43 [emerg] 6412#20112: host not found in upstream "target_select" in ./conf/nginx.conf:47
+2021/11/18 21:07:54 [notice] 17800#26056: signal process started
+2021/11/18 21:08:49 [notice] 17948#21960: signal process started
+2021/11/18 21:09:52 [info] 11208#13800: *9 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2021/11/18 21:10:34 [notice] 9512#10008: signal process started
+2021/11/18 21:10:40 [error] 16288#16896: *10 failed to load external Lua file "./lua/test.lua": cannot open ./lua/test.lua: No such file or directory, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:10:49 [notice] 2188#1360: signal process started
+2021/11/18 21:10:54 [error] 16288#16896: *11 failed to load external Lua file "./lua/test.lua": cannot open ./lua/test.lua: No such file or directory, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:11:39 [notice] 9476#11176: signal process started
+2021/11/18 21:11:42 [error] 12060#16552: *12 failed to load external Lua file "./lua/test.lua": cannot open ./lua/test.lua: No such file or directory, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:12:42 [info] 9640#9716: *13 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2021/11/18 21:12:50 [notice] 25732#2036: signal process started
+2021/11/18 21:13:11 [info] 6384#9584: *14 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:13:11 [info] 6384#9584: *14 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:13:11 [info] 6384#9584: *14 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:14:11 [info] 6384#9584: *15 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2021/11/18 21:15:01 [notice] 19852#2192: signal process started
+2021/11/18 21:15:43 [info] 6384#9584: *17 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2021/11/18 21:16:00 [info] 9256#5348: *18 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:16:00 [info] 9256#5348: *18 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:16:00 [info] 9256#5348: *18 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:16:00 [info] 9256#5348: *18 client prematurely closed connection, so upstream connection is closed too while reading upstream, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", upstream: "http://127.0.0.1:8083/download", host: "127.0.0.1:8080"
+2021/11/18 21:16:04 [info] 9256#5348: *19 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:16:04 [info] 9256#5348: *19 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:16:04 [info] 9256#5348: *19 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "GET /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:17:04 [info] 9256#5348: *21 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2021/11/18 21:30:58 [info] 9256#5348: *23 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:30:58 [info] 9256#5348: *23 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:30:58 [info] 9256#5348: *23 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:31:20 [notice] 10372#24884: signal process started
+2021/11/18 21:31:22 [info] 4868#14748: *25 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:31:22 [info] 4868#14748: *25 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:31:22 [info] 4868#14748: *25 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:33:25 [notice] 25624#17220: signal process started
+2021/11/18 21:33:28 [info] 26388#4632: *26 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:33:28 [info] 26388#4632: *26 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:33:28 [info] 26388#4632: *26 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:34:23 [notice] 6900#24724: signal process started
+2021/11/18 21:34:25 [info] 6432#4404: *27 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:34:25 [info] 6432#4404: *27 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:34:25 [info] 6432#4404: *27 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:30 [notice] 14508#24916: signal process started
+2021/11/18 21:35:33 [info] 3188#17380: *28 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:33 [info] 3188#17380: *28 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:33 [info] 3188#17380: *28 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:42 [info] 3188#17380: *28 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:42 [info] 3188#17380: *28 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:42 [info] 3188#17380: *28 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:51 [info] 3188#17380: *28 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:51 [info] 3188#17380: *28 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:35:51 [info] 3188#17380: *28 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:06 [notice] 15344#8108: signal process started
+2021/11/18 21:36:09 [info] 21120#21164: *29 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:09 [info] 21120#21164: *29 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:09 [info] 21120#21164: *29 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:10 [info] 21120#21164: *29 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:10 [info] 21120#21164: *29 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:10 [info] 21120#21164: *29 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:22 [notice] 22380#15088: signal process started
+2021/11/18 21:36:24 [info] 17536#13296: *30 [lua] test.lua:2: Hello world.., client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:24 [info] 17536#13296: *30 [lua] test.lua:14: /download, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
+2021/11/18 21:36:24 [info] 17536#13296: *30 [lua] test.lua:17: localhost, client: 127.0.0.1, server: localhost, request: "POST /download HTTP/1.1", host: "127.0.0.1:8080"
