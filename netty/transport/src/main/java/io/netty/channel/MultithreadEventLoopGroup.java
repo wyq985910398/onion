@@ -88,6 +88,7 @@ public abstract class MultithreadEventLoopGroup extends MultithreadEventExecutor
 
     @Override
     public ChannelFuture register(ChannelPromise promise) {
+        //todo next() 会选择一个EventLoop 
         return next().register(promise);
     }
 

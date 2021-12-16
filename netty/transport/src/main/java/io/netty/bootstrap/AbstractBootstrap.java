@@ -70,7 +70,7 @@ public abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     AbstractBootstrap() {
         // Disallow extending from a different package.
     }
-
+    // todo 抽象类的构造函数？？ 怎么调用呢？
     AbstractBootstrap(AbstractBootstrap<B, C> bootstrap) {
         group = bootstrap.group;
         channelFactory = bootstrap.channelFactory;
@@ -104,6 +104,7 @@ public abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
      * The {@link Class} which is used to create {@link Channel} instances from.
      * You either use this or {@link #channelFactory(io.netty.channel.ChannelFactory)} if your
      * {@link Channel} implementation has no no-args constructor.
+     * todo 这里是由外面调用 .channel(NioServerSocketChannel.class) 实例化一个Channel
      */
     public B channel(Class<? extends C> channelClass) {
         return channelFactory(new ReflectiveChannelFactory<C>(
@@ -307,6 +308,7 @@ public abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     final ChannelFuture initAndRegister() {
         Channel channel = null;
         try {
+            //todo 这里是反射创建了 NIOServerSocketChannel
             channel = channelFactory.newChannel();
             init(channel);
         } catch (Throwable t) {

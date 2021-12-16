@@ -70,7 +70,7 @@ public abstract class AbstractNioChannel extends AbstractChannel {
     private SocketAddress requestedRemoteAddress;
 
     /**
-     * Create a new instance
+     * Create a new instance todo:由Acceptor 实例化一个Channel 然后传给WorkGroup
      *
      * @param parent            the parent {@link Channel} by which this instance was created. May be {@code null}
      * @param ch                the underlying {@link SelectableChannel} on which it operates
@@ -377,6 +377,7 @@ public abstract class AbstractNioChannel extends AbstractChannel {
         boolean selected = false;
         for (;;) {
             try {
+                //抽象的Channel调用java的 SelectableChannel 注册Selector和 感兴趣的事件 ops 0
                 selectionKey = javaChannel().register(eventLoop().unwrappedSelector(), 0, this);
                 return;
             } catch (CancelledKeyException e) {
@@ -411,6 +412,7 @@ public abstract class AbstractNioChannel extends AbstractChannel {
 
         final int interestOps = selectionKey.interestOps();
         if ((interestOps & readInterestOp) == 0) {
+            // todo 调用的是Jdk 的 SelectionKey 增加Op_Read感兴趣事件
             selectionKey.interestOps(interestOps | readInterestOp);
         }
     }
