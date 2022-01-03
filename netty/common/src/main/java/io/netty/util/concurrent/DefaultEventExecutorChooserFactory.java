@@ -70,6 +70,7 @@ public final class DefaultEventExecutorChooserFactory implements EventExecutorCh
 
         @Override
         public EventExecutor next() {
+            // todo 这里是从线程池里面选择一个线程 负载均衡算法
             return executors[(int) Math.abs(idx.getAndIncrement() % executors.length)];
         }
     }
